@@ -2,6 +2,8 @@
 
 :root {
     --dark-02: #424247;
+    --title-font-size-mobile:20px;
+    --desc-font-size-mobile:14px;
 }
 
 * {
@@ -19,6 +21,20 @@
     font-weight: 700;
     border-radius: 8px;
     border: none;
+}
+
+.primary-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.primary-desc {
+    margin-top: 1.5rem;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 /* -------------------------- */
@@ -122,11 +138,27 @@ input {
 /* banner Section done */
 
 
+/* styles for safety section */
+.safety {
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+
+}
+
+.safety-content {
+    margin-top: 5px;
+    width: 36rem;
+}
+.safety button{
+    margin-top: 24px;
+}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 @media screen and (max-width:600px) {
     * {
         padding: 0;
         margin: 0;
+        
     }
 
     nav {
@@ -180,5 +212,27 @@ input {
         width: 255px;
         margin: 0 auto;
     }
-/* @@@@@@@@@@@@@@@@@@@@-banner section done@@@@@@@@@@@@@@@@@@@@@ */
+
+    /* @@@@@@@@@@@@@@@@@@@@-banner section done@@@@@@@@@@@@@@@@@@@@@ */
+    /* style for safety tips section */
+    .safety{
+        margin-top: 24px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .primary-title{
+        font-size: var(--title-font-size-mobile);
+    }
+  .primary-desc{
+    font-size: var(--desc-font-size-mobile);
+  }
+  .safety-content{
+    max-width: 335px;
+    padding: 0 20px;
+  }
+  .safety img {
+    height: 342px;
+    width: 335px;
+  }
+
 }
