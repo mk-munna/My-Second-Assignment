@@ -10,7 +10,7 @@
     font-family: 'Mulish', sans-serif;
     max-width: 73.125rem;
     margin: 0 auto;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     /* border for testing the line and size */
 }
 
@@ -30,9 +30,24 @@
     font-weight: 800;
 }
 
+.primary-title2 {
+    margin-top: 2rem;
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
 .primary-desc {
     margin-top: 1.5rem;
     color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.primary-desc2 {
+    margin-top: 1rem;
+    color: #5A5A5D;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -231,19 +246,58 @@ input {
     justify-content: center;
     align-items: center;
 }
+
 /* box section donne */
 
+/* style for why choose us section----------------------------- */
 
+.choose {
+    margin-top: 100px;
+}
 
+.choose-content {
+    text-align: center;
+    width: 40rem;
+}
 
+.choose-box {
+    margin-top: 3rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.card {
+    width: 31.5rem;
+    height: 17.75rem;
+    padding: 2rem;
+}
+
+.choose1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.choose2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.choose3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    transform: translateX(300px);
+}
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 @media screen and (max-width:600px) {
     * {
         padding: 0;
         margin: 0;
-        /* border: 1px solid red; */ 
+        /* border: 1px solid red; */
         /* border for testing the line and size */
 
     }
@@ -307,17 +361,26 @@ input {
         flex-direction: column;
         gap: 24px;
     }
-.safety button{
-    margin-left: 2rem;
-}
-.safety .primary-title{
-    text-align: center;
-}
+
+    .safety button {
+        margin-left: 2rem;
+    }
+
+    .safety .primary-title {
+        text-align: center;
+    }
+
     .primary-title {
+        font-size: var(--title-font-size-mobile);
+    }
+    .primary-title2 {
         font-size: var(--title-font-size-mobile);
     }
 
     .primary-desc {
+        font-size: var(--desc-font-size-mobile);
+    }
+    .primary-desc2 {
         font-size: var(--desc-font-size-mobile);
     }
 
@@ -332,27 +395,42 @@ input {
         margin-left: 1.2rem;
     }
 
-    .destination .primary-title{
+    .destination .primary-title {
         font-size: var(--title-font-size-mobile);
         width: 335px;
         padding: 0 20px;
     }
-    .destination .primary-desc{
+
+    .destination .primary-desc {
         font-size: var(--desc-font-size-mobile);
         width: 335px;
         padding: 0 20px;
     }
 
-.grid{
-    flex-direction: column;
-}
-.center{
-    height: 176px;
+    .grid {
+        flex-direction: column;
+    }
+
+    .center {
+        height: 176px;
+        width: 335px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 1.2rem;
+    }
+/* style for choose use section @@media */
+.choose-content {
+    padding: 0 20px;
     width: 335px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 1.2rem;
 }
+.choose-box {
+        grid-template-columns: repeat(1, 1fr);
+}
+.card {
+    width: 300px;
+    transform: none;
+}
+
 
 }
