@@ -21,7 +21,7 @@
     border: none;
 }
 
-
+/* -------------------------- */
 
 
 
@@ -67,7 +67,7 @@ nav .home {
 
 }
 
-/* style for banner  */
+/* style for banner ---------------- */
 header form {
     margin-top: 45px;
     display: flex;
@@ -83,8 +83,8 @@ input {
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
     font-weight: 400;
-    height: 8.2vh;
-    width: 12.73vw;
+    height: 3.25rem;
+    width: 10.8rem;
     border-radius: 8px;
     padding-left: .95rem;
     border: none;
@@ -93,7 +93,6 @@ input {
 
 }
 
-
 .banner {
     margin-top: 3.125rem;
     padding: 0 10rem;
@@ -101,11 +100,10 @@ input {
     align-items: center;
     text-align: center;
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(Resources/Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
     height: 31.25rem;
     border-radius: 16px;
 }
-
-.banner-form {}
 
 .banner-title {
     color: #FFF;
@@ -124,7 +122,7 @@ input {
 /* banner Section done */
 
 
-
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 @media screen and (max-width:600px) {
     * {
         padding: 0;
@@ -137,13 +135,19 @@ input {
     }
 
     nav ul {
-        flex-direction: column;
+        display: none;
     }
 
     .banner {
         max-width: 335px;
         background-size: cover;
+        background-position: center;
         padding: 0 20px;
+        align-items: normal;
+    }
+
+    .banner-content {
+        margin-top: 30px;
     }
 
     .banner-title {
@@ -153,11 +157,28 @@ input {
 
     .banner-desc {
         font-size: 14px;
+        margin-top: 10px;
     }
 
     header form {
+        margin-top: 10px;
+        width: 287px;
+        padding: 16px;
         flex-direction: column;
-        width: 255px;
-        height: 52px;
+        gap: 16px;
     }
+
+    header form select {
+        width: 255px;
+    }
+
+    header form input {
+        width: 240px;
+    }
+
+    .primary-btn {
+        width: 255px;
+        margin: 0 auto;
+    }
+/* @@@@@@@@@@@@@@@@@@@@-banner section done@@@@@@@@@@@@@@@@@@@@@ */
 }
