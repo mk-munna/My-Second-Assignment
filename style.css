@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+:root {
+    --dark-02: #424247;
+}
+
+* {
+    font-family: 'Mulish', sans-serif;
+    max-width: 73.125rem;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.primary-btn {
+    background: #FF5400;
+    padding: 1rem 2.2rem 1rem 2.2rem;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+}
+
+
+
+
+
+
+
+header {
+    margin-top: 3.125rem;
+}
+
+nav {
+    display: flex;
+    gap: 18.75rem;
+    align-items: center;
+}
+
+.mk-travel {
+    color: #FF5400;
+    font-size: 2.25rem;
+    font-weight: 800;
+    display: flex;
+}
+
+.mk {
+    color: #131318;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--Dark-02);
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-left: 44px;
+}
+
+nav .home {
+    color: #FF5400;
+    font-weight: 700;
+
+}
+
+/* style for banner  */
+header form {
+    margin-top: 45px;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+
+}
+
+header form select,
+input {
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+    height: 8.2vh;
+    width: 12.73vw;
+    border-radius: 8px;
+    padding-left: .95rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
+.banner {
+    margin-top: 3.125rem;
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(Resources/Images/Group\ 13\ \(1\)\ \(1\).png);
+    height: 31.25rem;
+    border-radius: 16px;
+}
+
+.banner-form {}
+
+.banner-title {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.banner-desc {
+    margin-top: 1.5rem;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* banner Section done */
+
+
+
+@media screen and (max-width:600px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .banner {
+        max-width: 335px;
+        background-size: cover;
+        padding: 0 20px;
+    }
+
+    .banner-title {
+        font-size: 22px;
+        font-weight: 800;
+    }
+
+    .banner-desc {
+        font-size: 14px;
+    }
+
+    header form {
+        flex-direction: column;
+        width: 255px;
+        height: 52px;
+    }
+}
