@@ -391,14 +391,16 @@ header form input {
 /* style for news latter ----------------------- */
 .newslatter-container {
     display: flex;
+    margin-bottom: 100px;
 }
 
 .newslatter-content {
-    height: 25rem;
+    margin-top: 10px;
+    height: 23.5rem;
     width: 28rem;
     padding: 20px;
     border-radius: 16px;
-    border: 1px solid #FF5400;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
 .newslatter-content .hr {
@@ -422,7 +424,8 @@ header form input {
     width: 300px;
     height: 100px;
     border: none;
-    transform: translate(179px, -147px) rotate(-19.628deg);
+    position: absolute;
+    transform: translate(363px, -147px) rotate(-19.628deg);
 }
 
 .coupon-title {
@@ -466,6 +469,56 @@ header form input {
     font-size: 16px;
     font-weight: 400;
 }
+
+/* footer------------------------- */
+
+.logo {
+    width: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.mk-name {
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+}
+.travel-red{
+    color:#FF5400 ;
+}
+.foot {
+    text-align: center;
+    
+}
+
+.footer-content{
+    width: 780px;
+}
+footer{
+    height: 502px;
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    text-align: center;
+}
+.fa-brands{
+    color: #131318;
+    margin: 20px 10px;
+    font-size: 1.5rem;
+}
+.line{
+    margin: 50px 0 50px 0;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+}
+.footer-content >p{
+    text-align: center;
+}
+
 
 
 
@@ -722,26 +775,38 @@ header form input {
         height: 400px;
         width: 335px;
         padding: 20px;
+
     }
 
     .newslatter-content .hr {
         width: 310px;
     }
+
     .newslatter-container .coupon {
         width: 214px;
         height: 78px;
-        transform: translate(65px, -114px) rotate(-19.628deg);
+        transform: translate(138px, -114px) rotate(-19.628deg);
     }
+
     .coupon-title {
         font-size: 14px;
         font-weight: 400;
     }
-    
+
     .coupon-no {
         margin-top: 10px;
         font-size: 20px;
         font-weight: 700;
     }
-    
+.footer-content{
+    width: 335px;
+    padding: 20px;
+}
+.newslatter-container {
+    margin-bottom: 24px;
+}
+.footer-content .line{
+    margin: 24px 0 24px 0;
+}
 
 }
