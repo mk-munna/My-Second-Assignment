@@ -10,7 +10,7 @@
     font-family: 'Mulish', sans-serif;
     max-width: 73.125rem;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* border for testing the line and size */
 }
 
@@ -22,6 +22,7 @@
     font-weight: 700;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
 
 .primary-title {
@@ -292,11 +293,77 @@ input {
     transform: translateX(300px);
 }
 
+/* style for deals and discount sencrion ---------------------------- */
+.discount {
+    margin-top: 100px;
+}
+
+.discount-box-container {
+    margin-top: 3rem;
+}
+
+.discount-box {
+    height: 31.25rem;
+    margin-top: 1.5rem;
+}
+
+.dcard1 {
+    background: url("Resources/Images/Group\ 39.png");
+}
+
+.dcard2 {
+    background: url("Resources/Images/Group\ 40.png");
+}
+
+.inner {
+    width: 30rem;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 3rem;
+    /* 50px*/
+
+}
+
+.card-one {
+    transform: translate(15.5rem, 2.8rem);
+}
+
+.card-two {
+    transform: translate(-15.5rem, 2.8rem);
+}
+
+.ctitle {
+    margin-top: 1.5rem;
+}
+
+.card-btn {
+    margin-top: 1.5rem;
+    padding: 14px 24px 14px 24px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    cursor: pointer;
+}
+
+.p-price {
+    margin-top: 1rem;
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 @media screen and (max-width:600px) {
     * {
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         /* border: 1px solid red; */
         /* border for testing the line and size */
 
@@ -373,6 +440,7 @@ input {
     .primary-title {
         font-size: var(--title-font-size-mobile);
     }
+
     .primary-title2 {
         font-size: var(--title-font-size-mobile);
     }
@@ -380,6 +448,7 @@ input {
     .primary-desc {
         font-size: var(--desc-font-size-mobile);
     }
+
     .primary-desc2 {
         font-size: var(--desc-font-size-mobile);
     }
@@ -392,7 +461,7 @@ input {
     .safety img {
         height: 342px;
         width: 335px;
-        margin-left: 1.2rem;
+        margin-left:;
     }
 
     .destination .primary-title {
@@ -419,18 +488,54 @@ input {
         background-repeat: no-repeat;
         margin-left: 1.2rem;
     }
-/* style for choose use section @@media */
-.choose-content {
-    padding: 0 20px;
-    width: 335px;
-}
-.choose-box {
-        grid-template-columns: repeat(1, 1fr);
-}
-.card {
-    width: 300px;
-    transform: none;
-}
 
+    /* style for choose use section @@media */
+    .choose-content {
+        padding: 0 20px;
+        width: 335px;
+    }
+
+    .choose-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        width: 300px;
+        transform: none;
+    }
+
+    /* style for discount section responsive */
+    .inner{
+        transform: translateY(8rem);
+    }
+    .discount-box {
+        width: 335px;
+        height: 500px;
+    }
+
+    .inner {
+        width: 250px;
+        height: 297px;
+        padding: 24px;
+    }
+.card-desc{
+    font-size: 14px;
+    line-height: 20px;
+}
+    .t {
+        margin-top: 10px;
+    }
+    .d{
+        margin-top: 0px;
+    }
+.p-price{
+    margin-top: 0;
+    font-size: 1rem;
+}
+.card-btn{
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 9px 18px 9px 18px;
+}
 
 }
