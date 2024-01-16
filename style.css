@@ -14,6 +14,10 @@
     /* border for testing the line and size */
 }
 
+section {
+    margin-top: 100px;
+}
+
 .primary-btn {
     background: #FF5400;
     padding: 1rem 2.2rem 1rem 2.2rem;
@@ -52,6 +56,12 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+}
+
+input:focus {
+    color: #FF5400;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* -------------------------- */
@@ -112,7 +122,7 @@ header form {
 }
 
 header form select,
-input {
+header form input {
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
     font-weight: 400;
@@ -157,7 +167,6 @@ input {
 
 /* styles for safety section */
 .safety {
-    margin-top: 100px;
     display: flex;
     gap: 50px;
 
@@ -252,9 +261,6 @@ input {
 
 /* style for why choose us section----------------------------- */
 
-.choose {
-    margin-top: 100px;
-}
 
 .choose-content {
     text-align: center;
@@ -294,9 +300,6 @@ input {
 }
 
 /* style for deals and discount sencrion ---------------------------- */
-.discount {
-    margin-top: 100px;
-}
 
 .discount-box-container {
     margin-top: 3rem;
@@ -357,6 +360,113 @@ input {
     font-weight: 800;
 }
 
+.all-package {
+    margin-top: 3.75rem;
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------------------style for video section---------------- */
+.video-container {
+    display: flex;
+    gap: 50px;
+}
+
+.video-container ul {
+    margin-top: 1.5rem;
+}
+
+.video-container li {
+    margin-bottom: 1rem;
+    color: #424249;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+
+
+
+
+/* style for news latter ----------------------- */
+.newslatter-container {
+    display: flex;
+}
+
+.newslatter-content {
+    height: 25rem;
+    width: 28rem;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newslatter-content .hr {
+    width: 25.5rem;
+    height: 1px;
+    margin: 1.5rem 0 0 0;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.newslatter-img {
+    padding: 10px;
+}
+
+.newslatter-img img {
+    width: 100%;
+}
+
+.newslatter-container .coupon {
+    border-radius: 16px;
+    background: #FF5400;
+    width: 300px;
+    height: 100px;
+    border: none;
+    transform: translate(179px, -147px) rotate(-19.628deg);
+}
+
+.coupon-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.coupon-no {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.newslatter-container form input {
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    padding-left: .95rem;
+    margin-top: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgba(19, 19, 24, 0.05);
+
+}
+
+.newslatter-container form input[type="submit"] {
+    background: #FF5400;
+    width: 25.5rem;
+    color: #FFF;
+}
+
+.newslatter-container input:focus {
+    color: #FF5400;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -367,6 +477,10 @@ input {
         /* border: 1px solid red; */
         /* border for testing the line and size */
 
+    }
+
+    section {
+        margin-top: 1.5rem;
     }
 
     nav {
@@ -461,7 +575,6 @@ input {
     .safety img {
         height: 342px;
         width: 335px;
-        margin-left:;
     }
 
     .destination .primary-title {
@@ -505,9 +618,14 @@ input {
     }
 
     /* style for discount section responsive */
-    .inner{
+    .discount {
+        margin-top: 1.5rem;
+    }
+
+    .inner {
         transform: translateY(8rem);
     }
+
     .discount-box {
         width: 335px;
         height: 500px;
@@ -518,24 +636,112 @@ input {
         height: 297px;
         padding: 24px;
     }
-.card-desc{
-    font-size: 14px;
-    line-height: 20px;
-}
+
+    .card-desc {
+        font-size: 14px;
+        line-height: 20px;
+        width: 215px;
+        margin-left: 0;
+
+    }
+
     .t {
         margin-top: 10px;
     }
-    .d{
+
+    .d {
         margin-top: 0px;
     }
-.p-price{
-    margin-top: 0;
-    font-size: 1rem;
-}
-.card-btn{
-    margin-top: 10px;
-    font-size: 1rem;
-    padding: 9px 18px 9px 18px;
-}
+
+    .p-price {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+
+    .card-btn {
+        margin-top: 10px;
+        font-size: 1rem;
+        padding: 9px 18px 9px 18px;
+    }
+
+    .all-package {
+        margin-top: 1.5rem;
+    }
+
+    .all {
+        color: #FF5400;
+        background: none
+    }
+
+    /* style for video responsive */
+    .video-container {
+        gap: 1.5rem;
+        flex-direction: column;
+    }
+
+    video {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-content {
+        width: 335px;
+        padding: 20px;
+    }
+
+    .video-container li {
+        margin-bottom: 1rem;
+        color: #424249;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    /* newslatter */
+
+    .newslatter-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .newslatter-container form input {
+        font-size: 14px;
+        width: 300px;
+
+
+    }
+
+    .newslatter-container form input[type="submit"] {
+        width: 315px;
+
+    }
+
+    .newslatter-content {
+        height: 400px;
+        width: 335px;
+        padding: 20px;
+    }
+
+    .newslatter-content .hr {
+        width: 310px;
+    }
+    .newslatter-container .coupon {
+        width: 214px;
+        height: 78px;
+        transform: translate(65px, -114px) rotate(-19.628deg);
+    }
+    .coupon-title {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .coupon-no {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
 
 }
