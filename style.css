@@ -8,14 +8,14 @@
 
 * {
     font-family: 'Mulish', sans-serif;
-    max-width: 73.125rem;
     margin: 0 auto;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     /* border for testing the line and size */
 }
 
-section {
+section , header{
     margin-top: 100px;
+    max-width: 73.125rem;
 }
 
 .primary-btn {
