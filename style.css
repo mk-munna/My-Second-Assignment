@@ -130,7 +130,7 @@ nav a {
 }
 
 nav a:hover {
-    color:#FF5400;
+    color: #FF5400;
 }
 
 .home {
@@ -158,7 +158,7 @@ header form input {
     height: 3.25rem;
     width: 10.8rem;
     border-radius: 8px;
-    padding:0 .95rem 0 .95rem;
+    padding: 0 .95rem 0 .95rem;
     border: none;
     outline: none;
     cursor: pointer;
@@ -547,6 +547,21 @@ header form input {
     gap: 50px;
 }
 
+.v-title {
+    position: relative;
+}
+
+.p-title {
+    width: 276px;
+    text-align: center;
+    position: absolute;
+    top: -250px;
+    right: 200px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
 .video-container ul {
     margin-top: 1.5rem;
 }
@@ -635,13 +650,13 @@ header form input {
 
 .newslatter-container form input[type="submit"] {
     background: var(--primary-color);
-     width: 25.5rem;
+    width: 25.5rem;
     color: #fff;
 }
 
 .newslatter-container input:focus {
     color: var(--primary-color);
-     font-size: 16px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -719,7 +734,7 @@ footer {
     }
 
     .navbar {
-      gap: 180px;
+        gap: 180px;
         align-items: center;
         float: right;
 
@@ -731,7 +746,7 @@ footer {
 
     nav {
         margin-bottom: 20px;
-      
+
     }
 
     .mk-travel {
