@@ -1,75 +1,78 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
 :root {
---dark-02: #424247;
---title-font-size-mobile: 20px;
---desc-font-size-mobile: 14px;
+    --dark-02: #424247;
+    --title-font-size-mobile: 20px;
+    --desc-font-size-mobile: 14px;
+    --primary-color: #FF5400;
+    /* --primary-color:#63AA45; */
+
 }
 
 * {
-font-family: 'Mulish', sans-serif;
-margin: 0 auto;
-/* border: 1px solid black; */
-/* border for testing the line and size */
+    font-family: 'Mulish', sans-serif;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    /* border for testing the position and size */
 }
 
-section , header{
-margin-top: 100px;
-max-width: 73.125rem;
+section,
+header {
+    margin-top: 100px;
+    max-width: 73.125rem;
 }
 
 .primary-btn {
-background: #FF5400;
-padding: 1rem 2.2rem 1rem 2.2rem;
-color: #FFF;
-font-size: 1rem;
-font-weight: 700;
-border-radius: 8px;
-border: none;
-cursor: pointer;
+    background: var(--primary-color);
+    padding: 1rem 2.2rem 1rem 2.2rem;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
 }
 
 .primary-title {
-color: #131318;
-font-size: 2.5rem;
-font-weight: 800;
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 .primary-title2 {
-margin-top: 2rem;
-color: #131318;
-font-size: 24px;
-font-weight: 800;
+    margin-top: 2rem;
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
 }
 
 .primary-desc {
-margin-top: 1.5rem;
-color: rgba(19, 19, 24, 0.70);
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
+    margin-top: 1.5rem;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 .primary-desc2 {
-margin-top: 1rem;
-color: #5A5A5D;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
+    margin-top: 1rem;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 input:focus {
-color: #FF5400;
-font-size: 16px;
-font-weight: 400;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* -------------------------- */
 .navbar {
     padding: 10px;
     display: flex;
-    gap:300px;
+    gap: 300px;
     align-items: center;
     float: right;
 
@@ -88,7 +91,7 @@ font-weight: 400;
 .dot-menu {
     width: 25px;
     height: 3px;
-    background-color: #FF5400;
+    background-color: var(--primary-color);
     margin: 4px 0;
 }
 
@@ -108,7 +111,7 @@ nav {
 }
 
 .mk-travel {
-    color: #FF5400;
+    color: var(--primary-color);
     font-size: 2.25rem;
     font-weight: 800;
     display: flex;
@@ -130,7 +133,7 @@ nav a {
 }
 
 nav .home {
-    color: #FF5400;
+    color: var(--primary-color);
     font-weight: 700;
 
 }
@@ -154,7 +157,7 @@ header form input {
     height: 3.25rem;
     width: 10.8rem;
     border-radius: 8px;
-    padding-left: .95rem;
+    padding:0 .95rem 0 .95rem;
     border: none;
     outline: none;
     cursor: pointer;
@@ -186,6 +189,156 @@ header form input {
     line-height: 26px;
 }
 
+/* style for about us section------------------------------------------ */
+
+.about-us-container {
+    margin-top: 100px;
+    display: flex;
+}
+
+.about-us-container .img2 {
+    position: absolute;
+    transform: translate(150px, -200px);
+}
+
+.image-section {
+    background: url("Resources/about-img-bg.png");
+    background-position: 10px 90px;
+    background-repeat: no-repeat;
+
+
+}
+
+.content-section {
+    margin-top: 25px;
+}
+
+.l {
+    width: 50%;
+}
+
+.pre-title {
+    font-size: 14px;
+    color: white;
+    background: var(--primary-color);
+    border-radius: 20px 0 20px 0;
+    border: none;
+    padding: 5px 10px 5px 10px;
+}
+
+.about-title {
+    margin-top: 5px;
+    font-size: 40px;
+    color: #100c08;
+    font-weight: 700;
+}
+
+.desc {
+    margin-top: 10px;
+    color: #787878;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.about-card {
+    margin-top: 50px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.min-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 250px;
+    border-radius: 8px;
+    background: #EFF6EC;
+
+
+}
+
+.a1 {
+    transform: rotate(-3deg);
+}
+
+.a2 {
+    transform: rotate(3deg);
+}
+
+.a3 {
+    transform: rotate(-3deg);
+}
+
+.a4 {
+    transform: rotate(3deg);
+}
+
+.img-div {
+    background: #C5E0BA;
+    height: 60px;
+    width: 50px;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+
+}
+
+.text-div {
+    height: 60px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.inquiry {
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.call {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.fa-headset {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.button-call-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.stylish-btn {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.no {
+    color: #63AB45;
+    font-size: 18px;
+    font-weight: 700;
+}
 
 /* styles for safety section */
 .safety {
@@ -321,7 +474,7 @@ header form input {
     transform: translateX(300px);
 }
 
-/* style for deals and discount sencrion ---------------------------- */
+/* style for deals and discount section ---------------------------- */
 
 .discount-box-container {
     margin-top: 3rem;
@@ -365,19 +518,19 @@ header form input {
 
 .card-btn {
     margin-top: 1.5rem;
-    padding: 14px 24px 14px 24px;
+    padding: 10px 24px 10px 24px;
     color: #FFF;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
     border-radius: 8px;
-    background: #FF5400;
+    background: var(--primary-color);
     border: none;
     cursor: pointer;
 }
 
 .p-price {
     margin-top: 1rem;
-    color: #FF5400;
+    color: var(--primary-color);
     font-size: 20px;
     font-weight: 800;
 }
@@ -442,7 +595,7 @@ header form input {
 
 .newslatter-container .coupon {
     border-radius: 16px;
-    background: #FF5400;
+    background: var(--primary-color);
     width: 300px;
     height: 100px;
     border: none;
@@ -481,14 +634,12 @@ header form input {
 }
 
 .newslatter-container form input[type="submit"] {
-    background: #FF5400;
-    width: 25.5rem;
+    background: var(--primary-color) width: 25.5rem;
     color: #FFF;
 }
 
 .newslatter-container input:focus {
-    color: #FF5400;
-    font-size: 16px;
+    color: var(--primary-color) font-size: 16px;
     font-weight: 400;
 }
 
@@ -505,18 +656,21 @@ header form input {
     font-size: 32px;
     font-weight: 800;
 }
-.travel-red{
-    color:#FF5400 ;
-}
-.foot {
-    text-align: center;
-    
+
+.travel-red {
+    color: var(--primary-color);
 }
 
-.footer-content{
+.foot {
+    text-align: center;
+
+}
+
+.footer-content {
     width: 780px;
 }
-footer{
+
+footer {
     height: 502px;
     background: rgba(19, 19, 24, 0.05);
     display: flex;
@@ -524,20 +678,23 @@ footer{
     align-items: center;
 }
 
-.icons{
+.icons {
     text-align: center;
 }
-.fa-brands{
+
+.fa-brands {
     color: #131318;
     margin: 20px 10px;
     font-size: 1.5rem;
 }
-.line{
+
+.line {
     margin: 50px 0 50px 0;
     height: 1px;
     background: rgba(19, 19, 24, 0.10);
 }
-.footer-content >p{
+
+.footer-content>p {
     text-align: center;
 }
 
@@ -558,46 +715,54 @@ footer{
         /* border for testing the line and size */
 
     }
+
     .navbar {
-        gap:160px;
+        gap: 160px;
         align-items: center;
         float: right;
-    
+
     }
+
     header {
         margin-top: 24px;
     }
+
     nav {
         margin-bottom: 24px;
     }
+
     .mk-travel {
-        font-size:21px ;
+        font-size: 21px;
         font-weight: 800;
 
     }
-    .navbar img{
+
+    .navbar img {
         width: 35px;
     }
+
     .menu {
         display: none;
     }
 
     .menu-icon {
         display: flex;
-        
+
     }
 
     .menu.active {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 100px; 
+        top: 100px;
         left: 0;
-        background-color: #292525;
+        background-color: #bdb8b8f8;
         width: 100%;
     }
-    .nav-link:hover{
-        background-color: #FF5400;
+
+    header a:hover {
+        background-color: var(--primary-color);
+        border-radius: 5px;
     }
 
     section {
@@ -647,6 +812,84 @@ footer{
         margin: 0 auto;
     }
 
+    /* ----------------------about us section- responsive@@@@@@@@@@@@@------------- */
+
+    .about-us-container {
+        margin-top: 24px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+    }
+
+    .image-section {
+        background: none;
+
+
+    }
+
+    .min-card {
+        height: 60px;
+        width: 280px;
+        transform: none;
+
+
+    }
+
+    .img-div {
+        height: 60px;
+        width: 50px;
+    }
+
+    .text-div {
+        height: 60px;
+        width: 230px;
+
+    }
+
+    .no,
+    .fa-brands {
+        font-size: 16px;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+    }
+
+    .image-section {
+        padding: 15px;
+    }
+
+    .l {
+        width: 90%;
+    }
+
+    .about-title {
+        font-size: 20px;
+
+    }
+
+    .image-section .img2 {
+        position: relative;
+    }
+
+    .content-section {
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .about-us-container .img2 {
+        transform: none
+    }
+
+    .about-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-us-container img {
+        width: 335px;
+    }
+
     /* @@@@@@@@@@@@@@@@@@@@-banner section done@@@@@@@@@@@@@@@@@@@@@ */
     /* style for safety tips section */
     .safety {
@@ -681,7 +924,7 @@ footer{
 
     .safety-content {
         max-width: 335px;
-        padding: 0 20px;
+        padding: 0 30px;
     }
 
     .safety img {
@@ -781,7 +1024,7 @@ footer{
     }
 
     .all {
-        color: #FF5400;
+        color: var(--primary-color);
         background: none
     }
 
@@ -857,17 +1100,18 @@ footer{
         font-size: 20px;
         font-weight: 700;
     }
-.footer-content{
-    width: 335px;
-    padding: 20px;
-}
-.newslatter-container {
-    margin-bottom: 24px;
-}
-.footer-content .line{
-    margin: 24px 0 24px 0;
-}
+
+    .footer-content {
+        width: 335px;
+        padding: 20px;
+    }
+
+    .newslatter-container {
+        margin-bottom: 24px;
+    }
+
+    .footer-content .line {
+        margin: 24px 0 24px 0;
+    }
 
 }
-
-
