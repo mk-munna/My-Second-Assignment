@@ -453,23 +453,22 @@ header form input {
     width: 31.5rem;
     height: 17.75rem;
     padding: 2rem;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.12);
+
 }
 
 .choose1 {
     border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
 }
 
 .choose2 {
     border-radius: 16px;
-    border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
 }
 
 .choose3 {
     border-radius: 16px;
-    border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
     transform: translateX(300px);
 }
