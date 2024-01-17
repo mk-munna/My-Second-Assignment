@@ -1051,7 +1051,13 @@ footer {
         gap: 1.5rem;
         flex-direction: column;
     }
-
+    .p-title {
+        width: 250px;
+        top: -140px;
+        right: 60px;
+        font-size: 16px;
+    }
+    
     video {
         width: 90%;
         margin: 0 auto;
