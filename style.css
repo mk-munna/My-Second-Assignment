@@ -633,8 +633,9 @@ header form input {
 }
 
 .newslatter-container form input[type="submit"] {
-    background: var(--primary-color) width: 25.5rem;
-    color: #FFF;
+    background: var(--primary-color);
+     width: 25.5rem;
+    color: #fff;
 }
 
 .newslatter-container input:focus {
