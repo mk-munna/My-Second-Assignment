@@ -72,7 +72,7 @@ input:focus {
 .navbar {
     padding: 10px;
     display: flex;
-    gap: 300px;
+    gap: 390px;
     align-items: center;
     float: right;
 
@@ -94,9 +94,6 @@ input:focus {
     background-color: var(--primary-color);
     margin: 4px 0;
 }
-
-
-/* ---------- */
 
 
 header {
@@ -127,12 +124,16 @@ nav a {
     text-decoration: none;
     color: var(--Dark-02);
     font-size: 1.125rem;
-    font-weight: 400;
+    font-weight: 500;
     margin-left: 44px;
     padding: 5px;
 }
 
-nav .home {
+nav a:hover {
+    color:#FF5400;
+}
+
+.home {
     color: var(--primary-color);
     font-weight: 700;
 
@@ -639,7 +640,8 @@ header form input {
 }
 
 .newslatter-container input:focus {
-    color: var(--primary-color) font-size: 16px;
+    color: var(--primary-color);
+     font-size: 16px;
     font-weight: 400;
 }
 
@@ -717,7 +719,7 @@ footer {
     }
 
     .navbar {
-        gap: 160px;
+      gap: 180px;
         align-items: center;
         float: right;
 
@@ -728,7 +730,8 @@ footer {
     }
 
     nav {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
+      
     }
 
     .mk-travel {
@@ -761,7 +764,7 @@ footer {
     }
 
     header a:hover {
-        background-color: var(--primary-color);
+        color: var(--primary-color);
         border-radius: 5px;
     }
 
